@@ -1,0 +1,22 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "cj-infotach",
+          "appId": "1:1057344702901:android:2cca5635b027b55b76b1fc",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "cj-infotach",
+          "configurations": {
+            "android": "1:1057344702901:android:2cca5635b027b55b76b1fc",
+            "ios": "1:1057344702901:ios:172cbd6f39c27b4c76b1fc"
+          }
+        }
+      }
+    }
+  }
+}

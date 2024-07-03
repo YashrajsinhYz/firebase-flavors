@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1057344702901",
+    "project_id": "cj-infotach",
+    "storage_bucket": "cj-infotach.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057344702901:android:2cca5635b027b55b76b1fc",
+        "android_client_info": {
+          "package_name": "com.example.firebase_with_flavors"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5zb4JCa3gxOVetvnoZRm-IUVN9pdt89s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
