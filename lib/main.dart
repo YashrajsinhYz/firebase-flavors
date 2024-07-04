@@ -1,15 +1,19 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:firebase_with_flavors/firebase_options.dart';
+import 'package:firebase_with_flavors/flavor_config.dart';
+import 'package:firebase_with_flavors/live_firebase_options.dart';
+import 'package:firebase_with_flavors/demo_firebase_options.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-Future<void> main() async {
+Future<void> mainMethod(FlavorConfig appConfig) async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize Firebase
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
+    options: appConfig.isLive
+        ? LiveFirebaseOptions.currentPlatform
+        : DemoFirebaseOptions.currentPlatform,
   );
 
   // For non-Async errors

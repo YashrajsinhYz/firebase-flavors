@@ -8,18 +8,18 @@ import 'package:flutter/foundation.dart'
 ///
 /// Example:
 /// ```dart
-/// import 'firebase_options.dart';
+/// import 'live_firebase_options.dart';
 /// // ...
 /// await Firebase.initializeApp(
 ///   options: DefaultFirebaseOptions.currentPlatform,
 /// );
 /// ```
-class DefaultFirebaseOptions {
+class LiveFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
       throw UnsupportedError(
         'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
+            'you can reconfigure this by running the FlutterFire CLI again.',
       );
     }
     switch (defaultTargetPlatform) {
@@ -30,17 +30,17 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       default:
         throw UnsupportedError(
@@ -50,19 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD5zb4JCa3gxOVetvnoZRm-IUVN9pdt89s',
-    appId: '1:1057344702901:android:2cca5635b027b55b76b1fc',
-    messagingSenderId: '1057344702901',
-    projectId: 'cj-infotach',
-    storageBucket: 'cj-infotach.appspot.com',
+    apiKey: 'AIzaSyAwmK0p-HOrwaTjrTfcR_bQ0mYCPo_-z9c',
+    appId: '1:176385876277:android:dc10fbbfba4b479adeac7c',
+    messagingSenderId: '176385876277',
+    projectId: 'chat-app-b8c4c',
+    storageBucket: 'chat-app-b8c4c.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAN6z0PrlqJ_scXwULrZYiY8IvVOx4FB0E',
+    apiKey: 'AIzaSyARi0R01eZDomsDNV0imsFxjcKKj-hX-Cw',
     appId: '1:1057344702901:ios:172cbd6f39c27b4c76b1fc',
-    messagingSenderId: '1057344702901',
-    projectId: 'cj-infotach',
-    storageBucket: 'cj-infotach.appspot.com',
+    messagingSenderId: '176385876277',
+    projectId: 'chat-app-b8c4c',
+    storageBucket: 'chat-app-b8c4c.appspot.com',
     iosBundleId: 'com.example.firebaseWithFlavors',
   );
 }

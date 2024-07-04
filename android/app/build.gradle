@@ -65,6 +65,22 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    flavorDimensions "default"
+    productFlavors {
+        live {
+            dimension "default"
+            applicationIdSuffix ".live"
+            versionNameSuffix "-live"
+            resValue "string", "app_name", "Live App"
+        }
+        demo {
+            dimension "default"
+            applicationIdSuffix ""
+            versionNameSuffix "-demo"
+            resValue "string", "app_name", "Demo App"
+        }
+    }
 }
 
 flutter {
